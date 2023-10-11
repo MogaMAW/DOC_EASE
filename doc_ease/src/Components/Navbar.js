@@ -1,14 +1,14 @@
 import React from 'react';
 // Adding a logo to the navbar
-import logo from '../logo.svg';
 import DOC_Ease from '../DOC_Ease.png';
-
+import { useNavigate } from 'react-router-dom';
 
 // This is a logo variable that holds the logo image
 const logoURL = DOC_Ease;
 
 
 const NavBar = () => {
+  const navigate = useNavigate();
   const navStyle = {
     display: 'flex',
     justifyContent: 'space-between',
@@ -19,7 +19,7 @@ const NavBar = () => {
     fontFamily: 'montserrat',
     boxShadow: '0 0 10px 0 rgba(0, 0, 0, 0.1)',
     zIndex: '9999',
-    position: 'fixed',
+    position: 'absolute',
     width: '100%',
     height: '70px',
     space : '1px',
@@ -83,8 +83,15 @@ const NavBar = () => {
     // Add animation to the button
     animation: 'pulse 1s infinite',
   };
-
-  return (
+  const SignInButton = () => {
+    
+  };
+  const handleButtonClick = () => {
+      // Navigate to the /login route when the button is pressed
+      navigate('/login');
+    };
+  
+  return (  
     <header style={navStyle}>
         {/* Create a link for the logo */}
       <div style={logoStyle}>
@@ -101,7 +108,9 @@ const NavBar = () => {
       </nav>
       <div style={buttonContainerStyle}>
         {/* <button style={buttonStyle}>Register</button> */}
-        <button style={buttonStyle}>Sign In</button>
+        <button style={buttonStyle} onClick={handleButtonClick}>
+          Sign In
+         </button>
       </div>
     </header>
   );

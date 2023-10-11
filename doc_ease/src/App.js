@@ -1,21 +1,22 @@
-// import logo from './logo.svg';
+import React from 'react';
 import './App.css';
-import NavBar from './Components/Navbar';
-import HeroSection from './Components/Herosection';
-// import Card from './Components/Card';
-import Footer from './Components/Footer';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Welcomepage from './Components/Welcomepage';
 import SignInSide from './Components/Login';
+// import Footer from './Components/Footer';
+
 function App() {
   return (
     <div className="App">
-      {/* <NavBar /> */}
-      {/* <HeroSection /> */}
-      {/* <Card /> */}
-      <SignInSide />
-      <div>
-      <Footer />
-      </div>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Welcomepage />} />
+          <Route path="/login" element={<SignInSide />} />
+        </Routes>
+      </Router>
+      {/* <Footer /> */}
     </div>
   );
 }
+
 export default App;
