@@ -9,11 +9,16 @@ const NavBar = () => {
     display: 'flex',
     justifyContent: 'space-between',
     alignItems: 'center',
-    padding: '10px 20px',
+    padding: '10px 10px',
     background: 'white',
     color: '#ffffff',
-    fontFamily: 'Roboto, sans-serif',
+    fontFamily: 'montserrat',
     boxShadow: '0 0 10px 0 rgba(0, 0, 0, 0.1)',
+    zIndex: '9999',
+    position: 'fixed',
+    width: '100%',
+    height: '70px',
+    space : '1px',
     
     
   };
@@ -24,9 +29,6 @@ const NavBar = () => {
     height : '120px',
     marginRight: '30px',
     marginRight:'-100px'
-
-   
-    
   };
 
   const navItemStyle = {
@@ -53,7 +55,7 @@ const NavBar = () => {
   };
   const buttonStyle = {
     padding: '10px 20px',
-    borderRadius: '9999px',
+    borderRadius: '10px',
     border: 'none',
     backgroundColor: 'lightgreen',
     color: 'white',
