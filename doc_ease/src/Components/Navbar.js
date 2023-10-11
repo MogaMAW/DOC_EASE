@@ -30,7 +30,16 @@ const NavBar = () => {
     marginRight: '30px',
     marginRight:'-100px'
   };
+  
+  {
+    // Make this component responsive
 
+    /* Extra small devices (phones, 600px and down) */
+
+
+
+
+  }
   const navItemStyle = {
     margin: '0 16px',
     fontSize: '1rem',
@@ -55,7 +64,7 @@ const NavBar = () => {
   };
   const buttonStyle = {
     padding: '10px 20px',
-    borderRadius: '10px',
+    borderRadius: '30px',
     border: 'none',
     backgroundColor: 'lightgreen',
     color: 'white',

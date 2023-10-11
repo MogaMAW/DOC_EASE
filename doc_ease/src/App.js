@@ -10,7 +10,7 @@ function App() {
       <NavBar />
       <HeroSection />
       <div>
-      <Footer />
+      {/* <Footer /> */}
       </div>
     </div>
   );

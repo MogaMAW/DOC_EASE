@@ -6,6 +6,11 @@ const Footer = () => {
     color: '#fff',
     padding: '20px 0',
     textAlign: 'center',
+    marginTop: '30px',
+    fontFamily: 'montserrat',
+    boxShadow: '0 0 10px 0 rgba(0, 0, 0, 0.1)',
+
+
   };
 
   const contentStyle = {
@@ -14,11 +19,13 @@ const Footer = () => {
     display: 'flex',
     justifyContent: 'center',
     flexWrap: 'wrap',
+    
   };
 
   const sectionStyle = {
     margin: '10px',
     textAlign: 'left',
+    
   };
 
   const headingStyle = {
