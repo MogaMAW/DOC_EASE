@@ -3,7 +3,11 @@ import React from 'react';
 import logo from '../logo.svg';
 import DOC_Ease from '../DOC_Ease.png';
 
+
+// This is a logo variable that holds the logo image
 const logoURL = DOC_Ease;
+
+
 const NavBar = () => {
   const navStyle = {
     display: 'flex',
@@ -90,10 +94,10 @@ const NavBar = () => {
         </a>
       </div>
       <nav>
-        <a href="/" style={navItemStyle}>Home</a>
-        <a href="/about" style={navItemStyle}>About</a>
-        <a href="/services" style={navItemStyle}>Services</a>
-        <a href="/contacts" style={navItemStyle}>Contacts</a>
+        <a href="/" style={navItemStyle}>HOME</a>
+        <a href="/about" style={navItemStyle}>ABOUT</a>
+        <a href="/services" style={navItemStyle}>SERVICES</a>
+        <a href="/contacts" style={navItemStyle}>CONTACTS</a>
       </nav>
       <div style={buttonContainerStyle}>
         {/* <button style={buttonStyle}>Register</button> */}

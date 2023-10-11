@@ -4,13 +4,16 @@ import NavBar from './Components/Navbar';
 import HeroSection from './Components/Herosection';
 // import Card from './Components/Card';
 import Footer from './Components/Footer';
+import SignInSide from './Components/Login';
 function App() {
   return (
     <div className="App">
-      <NavBar />
-      <HeroSection />
+      {/* <NavBar /> */}
+      {/* <HeroSection /> */}
+      {/* <Card /> */}
+      <SignInSide />
       <div>
-      {/* <Footer /> */}
+      <Footer />
       </div>
     </div>
   );

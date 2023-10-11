@@ -49,7 +49,7 @@ const HeroSection = () => {
   return (
     <div style={heroSectionStyle}>
       <div style={contentStyle}>
-        <h1>Welcome to Our Telehealth App</h1>
+        <h1> DOC EASE</h1>
         <p>Connecting you to Health facilities anytime, anywhere.</p>
         <button style={buttonStyle} onClick={handleButtonClick}>
           Get Started
